@@ -7,10 +7,10 @@ import { userModel } from '../../model'
 
 
 let data = [
-  {id : 1 ,name : 'Nodejs'        , img : IMAGES.nodejs},
-  {id : 2 ,name : 'ReactJS'       , img : IMAGES.react},
-  {id : 3 ,name : 'React Native'  , img : IMAGES.reactNative},
-  {id : 4 ,name : 'Laravel'       , img : IMAGES.laravel},
+  {id : 1 ,name : 'Nodejs', img : IMAGES.nodejs},
+  {id : 2 ,name : 'ReactJS' , img : IMAGES.react},
+  {id : 3 ,name : 'React Native', img : IMAGES.reactNative},
+  {id : 4 ,name : 'Laravel' , img : IMAGES.laravel},
 ]
 
 const RoomScreen = () => {
@@ -24,8 +24,6 @@ const RoomScreen = () => {
       }
     }, [])
   );
-
-
   const goChatRoom = (item) => {
     navigation.navigate('ChatScreen',{
       id : item.id,
@@ -45,7 +43,6 @@ const RoomScreen = () => {
         </TouchableOpacity>
       )
   }
-    
   return (
     <>
       <StatusBar hidden={true} />
